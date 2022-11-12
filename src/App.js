@@ -1,6 +1,7 @@
 import Cards from './components/Cards.jsx';
 import Header from './components/Header.jsx';
 import characters from './data.js';
+import NavBar from './components/NavBar.jsx';
 
 function App () {
 
@@ -12,6 +13,7 @@ function App () {
           characters={characters}
         />
       </div>
+      <NavBar />
     </div>
   )
 }
