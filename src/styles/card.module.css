@@ -5,15 +5,17 @@
 }
 .btn{
     background-color: var(--color-btn-card);
-    width: 1.4em;
+    width: 1.5em;
+    height: 1.5em;
     outline: none;
     border: none;
     border-radius: .25em;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding: .125em;
     cursor: pointer;
     transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .btn:hover{
     background-color: var(--color-btn-card-hover);

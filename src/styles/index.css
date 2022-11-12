@@ -1,7 +1,7 @@
 @import url(./normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
 :root{
-    --color-btn-card: #f54a44d0;
+    --color-btn-card: #f51f17b2;
     --color-btn-card-hover: #cf2f29;
     --color-btn-search: rgba(82, 126, 24, 0.575);
     --color-btn-search-hover: #526E2D99;
