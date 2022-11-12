@@ -1,19 +1,21 @@
 .searchBar{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .input{
     min-width: 80%;
+    min-height: 3em;
     font-size: small;
-    padding-left: .7%;
-    /* padding-right: 3%; */
+    padding-left: 2%;
     margin-bottom: 8px;
     border: none;
     background-color: rgba(51, 51, 51, 0.212);
     transition: .4s;
     scale: 1;
     border-radius: .2em;
+    font-size: 1em;
 }
 input:focus{
     border: none;

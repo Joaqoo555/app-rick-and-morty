@@ -1,4 +1,7 @@
 import styles from "../styles/searchBar.module.css"
+import {FcSearch} from "react-icons/fc"
+
+
 
 export default function SearchBar({onSearch}) {
    const handleSearch = ()=>{
@@ -11,7 +14,7 @@ export default function SearchBar({onSearch}) {
    }
    return (
       <div className={styles.searchBar}>
-          <input type='search' id="input" className={styles.input}/>
+          <input type='search' id="input" className={styles.input} placeholder="Search"/> 
       <button onClick={handleSearch} className={styles.btn}>Agregar</button> 
       </div>
    );
