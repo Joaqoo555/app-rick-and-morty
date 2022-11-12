@@ -1,0 +1,55 @@
+.content_btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+    background-color: var(--color-btn-card);
+    width: 1.4em;
+    outline: none;
+    border: none;
+    border-radius: .25em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: .125em;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn:hover{
+    background-color: var(--color-btn-card-hover);
+    transition: .2s;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    border-radius: 6px;
+    padding: 1em;
+    box-shadow: 0px 0px 20px 0px rgba(148,148,148,1);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.card:hover{
+    scale: 1.03;
+    transition: .3s;
+}
+
+.name{
+
+}
+.species{
+
+
+}
+
+.gender{
+
+}
+
+
+.img{
+    border-radius: 6px;
+
+}
