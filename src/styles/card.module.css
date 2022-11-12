@@ -9,13 +9,12 @@
     height: 1.5em;
     outline: none;
     border: none;
-    border-radius: .25em;
+    border-radius: .2em;
     cursor: pointer;
     transition: .2s;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .btn:hover{
     background-color: var(--color-btn-card-hover);
@@ -38,6 +37,6 @@
     transition: .3s;
 }
 .img{
-    border-radius: 6px;
+    border-radius: .25em;
     width: 230px;
 }

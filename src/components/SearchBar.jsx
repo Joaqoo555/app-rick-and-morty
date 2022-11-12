@@ -14,8 +14,11 @@ export default function SearchBar({onSearch}) {
    }
    return (
       <div className={styles.searchBar}>
+         <div className={styles.content_icon}>
+         <div className={styles.icon}> | < FcSearch /> </div>
           <input type='search' id="input" className={styles.input} placeholder="Search"/> 
-      <button onClick={handleSearch} className={styles.btn}>Agregar</button> 
+         </div>
+      <button onClick={handleSearch} className={styles.btn}>Add</button> 
       </div>
    );
 }
