@@ -2,8 +2,11 @@
 import styles from "./card.module.css";
 import {TfiClose} from "react-icons/tfi"
 
-function Card({ name, species, gender, image, onClose }) {
-  const handleOnClose = () => (typeof onClose === "function") ? onClose() : alert("No funciona")
+function Card({id, name, species, gender, image, onClose}) {
+  
+  const handleOnClose = () => (typeof onClose === "function") ? onClose(id) : alert("No funciona")
+
+  
   return (
     <div className={styles.card}>
       <div className={styles.content_btn}>

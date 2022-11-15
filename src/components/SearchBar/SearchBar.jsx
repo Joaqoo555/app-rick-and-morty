@@ -18,7 +18,6 @@ export default function SearchBar({onSearch}) {
    const onChange = ({target}) =>{
       return target.value
    }
-   console.log(onChange);
    
    return (
       <nav className={styles.searchBar}>
