@@ -1,21 +1,29 @@
-import Cards from './components/Cards.jsx';
-import Header from './components/Header.jsx';
-import characters from './data.js';
-import NavBar from './components/NavBar.jsx';
+import React, { useState } from "react";
+import Cards from "./components/Cards/Cards.jsx";
+import Header from "./components/Header/Header.jsx";
 
-function App () {
+function App() {
+  const [characters, setCharacters] = useState([]);
+  function onSearch(character) {
+    fetch(`https://rickandmortyapi.com/api/character/${character}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.name) {
+          setCharacters((oldChars) => [...oldChars, data]);
+        } else {
+          window.alert("No hay personajes con ese ID");
+        }
+      });
+  }
 
   return (
-    <div className='App'>
-      <Header />
+    <div className="App">
+      <Header onSearch={onSearch} />
       <div>
-        <Cards
-          characters={characters}
-        />
+        <Cards characters={characters} />
       </div>
-      <NavBar />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
