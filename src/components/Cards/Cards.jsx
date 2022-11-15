@@ -1,5 +1,5 @@
-import Card from './Card';
-import styles from "../styles/cards.module.css"
+import Card from '../Card/Card.jsx';
+import styles from "./cards.module.css"
 
 export default function Cards({characters}) {
    const chars = characters.map((element, index)=>{
