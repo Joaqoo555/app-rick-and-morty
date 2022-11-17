@@ -32,7 +32,6 @@
     text-align: center;
     cursor: pointer;
     transition: .3s;
-    background-color: ;
 }
 .card:hover{
     scale: 1.03;
@@ -41,4 +40,8 @@
 .img{
     border-radius: .25em;
     width: 230px;
+}
+.name_style{
+    text-decoration: none;
+    color: #000;
 }
