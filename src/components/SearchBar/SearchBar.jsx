@@ -7,7 +7,10 @@ export default function SearchBar({ onSearch, randomSearch }) {
   function handleChange({ target }) {
     setData(target.value);
   }
-  const handleSearch = () => onSearch(data);
+  const handleSearch = () => {
+    setData("")
+    onSearch(data)
+  };
 
 
   const disabled = useMemo(() => {
@@ -15,10 +18,11 @@ export default function SearchBar({ onSearch, randomSearch }) {
     return true;
   }, [data]);
   
+
+
   //Random Id
   const handleRandomId = ()=> {
     let numberRandom = parseInt(1 + Math.random() * 800)
-    console.log(numberRandom);
      return onSearch(numberRandom)
   }
   return (
