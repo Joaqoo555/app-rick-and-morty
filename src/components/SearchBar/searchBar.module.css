@@ -29,16 +29,20 @@
 input:focus{
     border: none;
     outline: none;
-    scale: 1.05;
+    scale: 1.02;
     transition: .4s;
 }
+
 .icon{
     position: absolute;
     right: 1em;
     scale: 1.5;
+    transition: .4s;
+    
 }
 
-.btn{
+
+.btn_1{
     border: none;
     outline: none;
     border-radius: .2em;
@@ -47,4 +51,38 @@ input:focus{
     text-align: center;
     cursor: pointer;
     background-color: var(--color-btn-search);
+    transition: .4s;
+}
+.btn_1:disabled{
+    color: #333;
+    background-color: rgba(184, 15, 15, 0.863);
+}
+.btn_1:hover:disabled{
+    color: #333;
+    background-color: rgba(184, 15, 15, 0.863);
+    cursor:default;
+}
+.btn_1:hover{
+    background-color: var(--color-btn-search-hover);
+    transition: .4s;
+}
+.btn_2{
+    border: none;
+    outline: none;
+    border-radius: .2em;
+    padding: 2%;
+    min-width: 80px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--color-btn-randomId);
+    transition: .4s;
+}
+.btn_2:hover{
+    transition: .4s;
+    background-color: var(--color-btn-randomId-hover);
+}
+.divButtons{
+display: flex;
+    width: 80%;
+    justify-content: space-around;
 }

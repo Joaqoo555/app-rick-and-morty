@@ -1,0 +1,26 @@
+
+.nav_link{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 1em;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+.links_decor{
+    text-decoration: none;
+}
+.link{
+    background-color: var(--color-links);
+    padding: .4em;
+    text-decoration: none;
+    color: #000;
+    border-radius: .2em;
+    transition: .3s;
+    margin: 0 1em;
+}
+.link:hover{
+    transition: .3s;
+    scale: 1.03;
+}
