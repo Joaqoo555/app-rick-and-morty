@@ -1,6 +1,30 @@
-.header{
-    min-width: 375px;
-    max-width: 1024px;
-    margin-bottom: 2em;
-    padding-top: 2em;
+.header {
+  min-width: 375px;
+  max-width: 1900px;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+.tittle_app {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .tittle_app {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+    max-height: 50px;
+    align-items: center;
+     
+  }
+  .tittle_app:hover{
+    cursor: default;
+  }
 }
