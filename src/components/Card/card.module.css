@@ -45,3 +45,11 @@
     text-decoration: none;
     color: #000;
 }
+.tittles{
+    max-width: 230px;
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+.species{
+    margin-top: .4em;
+}

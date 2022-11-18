@@ -5,7 +5,7 @@ function Details() {
    const [character, setCharacter] = useState([])
    const { name, image, status, species, gender } = character
    const home = useNavigate()
-   const goHome = ()=> home("/home")
+   const goHome = ()=> home("/")
 
    const {id} = useParams()
    useEffect(() => {
