@@ -9,6 +9,7 @@
 @media (min-width: 768px) {
     .cards{
         flex-direction: row;
+        
         justify-content: space-around;
         flex-wrap: wrap;
     }
