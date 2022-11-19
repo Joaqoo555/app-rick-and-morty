@@ -1,0 +1,11 @@
+.form{
+    margin: 2em;
+    border-radius: .2em;
+    
+
+}
+.warning {
+    transition: .3s;
+    background-color: rgba(255, 0, 0, 0.137);
+    border-color: red;
+}

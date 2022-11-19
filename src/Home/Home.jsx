@@ -38,7 +38,6 @@ export default function Home() {
     <div>
       <Header onSearch={onSearch}/>
       <Cards characters={characters} onClose={onClose} />
-
     </div>
   );
 }
