@@ -1,11 +1,75 @@
-.form{
-    margin: 2em;
-    border-radius: .2em;
-    
-
+.form {
+  max-width: 600px;
+  min-height: 300px;
+  margin: 2em;
+  border-radius: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2em;
+  padding-top: 2em;
+  box-shadow: 1px -1px 20px 8px rgba(3, 3, 3, 0.3);
 }
 .warning {
-    transition: .3s;
-    background-color: rgba(255, 0, 0, 0.137);
-    border-color: red;
+  transition: 0.3s;
+  background-color: rgba(255, 0, 0, 0.137);
+  border-color: red;
+}
+.defaultInp {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  padding: 7px;
+}
+.button {
+  border: none;
+  outline: none;
+  border-radius: 0.2em;
+  padding: 1%;
+  min-width: 80px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--color-btn-randomId);
+  transition: 0.4s;
+  min-height: 30px;
+  max-height: 50px;
+}
+@media (min-width: 800px) {
+  .form {
+    min-width: 500px;
+    min-height: 600px;
+    padding-top: 5em;
+    position: relative;
+    grid-area: form;
+  }
+  .button {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .defaultInp {
+    margin-bottom: 5em;
+  }
+  .content{
+    display: grid;
+    grid-template-areas: "form about about" "form icons icons";
+  }
+  .about{
+    grid-area: about;
+    width: 100%;
+    margin-top: 7em;
+    margin-right: 2em;
+    padding: .3em;
+    max-width: 300px;
+    max-height: 200px;
+  }
+  .about p {
+    line-height: 1rem;
+    font-style: italic;
+  }
+  .footer{
+    
+    grid-area: icons;
+  }
 }

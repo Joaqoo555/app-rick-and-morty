@@ -10,6 +10,7 @@
 }
 .links_decor{
     text-decoration: none;
+    color: white;
 }
 .link{
     background-color: var(--color-links);
