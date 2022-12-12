@@ -20,3 +20,9 @@ p{
     font-weight: 300;
     line-height: 0.5em;
 }
+input{
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    
+}

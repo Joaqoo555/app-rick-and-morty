@@ -2,8 +2,9 @@ import styles from "./searchBar.module.css";
 import { FcSearch } from "react-icons/fc";
 import { useMemo, useState } from "react";
 
-export default function SearchBar({ onSearch, randomSearch }) {
+export default function SearchBar({ onSearch, onCloseAll }) {
   const [data, setData] = useState("");
+  
   function handleChange({ target }) {
     setData(target.value);
   }
@@ -11,20 +12,11 @@ export default function SearchBar({ onSearch, randomSearch }) {
     setData("")
     onSearch(data)
   };
-
-
   const disabled = useMemo(() => {
     if (data.length > 0 && typeof data === "string") return false;
     return true;
   }, [data]);
   
-
-
-  //Random Id
-  const handleRandomId = ()=> {
-    let numberRandom = parseInt(1 + Math.random() * 800)
-     return onSearch(numberRandom)
-  }
   return (
     <div className={styles.searchBar}>
       <div className={styles.content_icon}>
@@ -44,11 +36,11 @@ export default function SearchBar({ onSearch, randomSearch }) {
       </div>
     <div className={styles.divButtons}>
       
-    <button onClick={handleSearch} className={styles.btn_1} disabled={disabled} >
+    <button onClick={handleSearch} className={styles.btn_1} disabled={disabled}>
         Add new Card
       </button>
-      <button onClick={handleRandomId} className={styles.btn_2} >
-        Random Button
+      <button onClick={onCloseAll} className={styles.btn_2} >
+        Close all Cards
       </button>
     </div>
     </div>

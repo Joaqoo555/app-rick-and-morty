@@ -12,9 +12,10 @@ export default function Cards({ characters, onClose }) {
         species={element.species}
         gender={element.gender}
         image={element.image}
+        status={element.status}
         onClose={onClose}
       />
     );
   });
-  return <div className={styles.cards}>{chars}</div>;
+  return <section className={styles.cards}>{chars}</section>;
 }

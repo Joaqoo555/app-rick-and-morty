@@ -2,12 +2,16 @@ import styles from "./card.module.css";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 
-function Card({ id, name, species, gender, image, onClose }) {
+function Card({ id, name, species, gender, image, onClose, status}) {
+
+  //status unknown, alive, dead
+
   const handleOnClose = () =>
     typeof onClose === "function" ? onClose(id) : alert("No funciona");
 
   return (
-    <div className={styles.card}>
+    <article className={styles.card}>
+      <i className={styles.status}>{status}</i>
       {/* button close */}
       <div className={styles.content_btn}>
         <button onClick={handleOnClose} className={styles.btn}>
@@ -23,9 +27,9 @@ function Card({ id, name, species, gender, image, onClose }) {
         <p className={styles.tittles}>{name}</p>
         <p className={styles.species}>Specie: {species}</p>
         <p className={styles.gender}>Sex: {gender}</p>
-
+        
       </Link>
-    </div>
+    </article>
   );
 }
 export default Card;
