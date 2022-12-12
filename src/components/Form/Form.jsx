@@ -34,7 +34,7 @@ function Form({ myHandleSubmit }) {
             myHandleSubmit(userData);
           }}
         >
-         < label htmlFor="username">Username : </label>
+         < label htmlFor="username">Username : joaquincarrera@gmail.com</label>
   
           <input
             type="text"
@@ -45,7 +45,7 @@ function Form({ myHandleSubmit }) {
             autoComplete="off"
           />
           {errors.username && <p>{errors.username}</p>}
-         < label htmlFor="password">Password : </label>
+         < label htmlFor="password">Password : joaquin1</label>
           <input
             type="password"
             name="password"
@@ -69,7 +69,7 @@ function Form({ myHandleSubmit }) {
             myHandleSubmit(userData);
           }}
         >
-         < label htmlFor="username">Username : </label>
+         < label htmlFor="username">Username : joaquincarrera@gmail.com</label>
   
           <input
             type="text"
@@ -80,7 +80,7 @@ function Form({ myHandleSubmit }) {
             autoComplete="off"
           />
           {errors.username && <p>{errors.username}</p>}
-         < label htmlFor="password">Password : </label>
+         < label htmlFor="password">Password : joaquin1</label>
           <input
             type="password"
             name="password"
