@@ -6,7 +6,7 @@ export default function validations({username, password}){
     if(username === "" || !validationEmail.test(username ) || username.length >= 35){
         errors.username = "No se ingreso de forma correcta su Gmail"
     }else if(password.length < 6 || password.length > 10 || !validationPassword.test(password)){
-        errors.password = "No paso contraseña"
+        errors.password = "la contraseña debe tener entre 6 y 10 caracteres, y un numero"
     }
     return errors
 }

@@ -2,6 +2,7 @@ import React from "react";
 import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from "react-icons/ai"
 import style from "./footer.module.css"
 const Footer = () => {
+  //Renderizado de footer y redes Sociales
   return (
     <footer>
       <div className={style.content_icons}>

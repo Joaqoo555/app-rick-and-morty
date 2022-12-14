@@ -4,12 +4,14 @@ import styles from "./navBar.module.css";
 import { useLocation } from "react-router-dom";
 
 const NavBar = ({ myLogOut }) => {
+  //si estamos en la ruta "/" no se mostrara el navBar
   let location = useLocation();
   if (location.pathname === "/") {
     return <>
     
     </>;
   }
+  //renderizado de navbar, con 2 botones, home y logOut
   return (
     <nav className={styles.cont_nav}>
       <div className={styles.nav_link}>
