@@ -13,6 +13,7 @@
   margin-bottom: 8px;
   color: var(--color-input);
 }
+
 .input {
   min-width: 100%;
   min-height: 3em;
@@ -37,6 +38,8 @@ input:focus {
   right: 1em;
   scale: 1.5;
   transition: 0.4s;
+  cursor: pointer;
+  z-index: 100;
 }
 
 .btn_1 {

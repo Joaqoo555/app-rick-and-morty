@@ -2,7 +2,7 @@ import Card from "../Card/Card.jsx";
 import styles from "./cards.module.css";
 
 export default function Cards({ characters, onClose }) {
-  //Map for render cards
+  //Map para el renderizado de cartas
   const chars = characters.map((element, index) => {
     return (
       <Card

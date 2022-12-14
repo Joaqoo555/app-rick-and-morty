@@ -9,11 +9,14 @@ import Error404 from "./components/Error/Error404.jsx";
 import Form from "./components/Form/Form.jsx";
 
 function App() {
+  //estado local para el acceso
   const [access, setAcces] = useState(false);
+
   const navigate = useNavigate();
   const userDefault = "joaquincarrera@gmail.com";
   const passwordDefault = "joaquin1";
 
+  //funcion submit para dar acceso a la app cuando se coloca la contraseña y usuario correcto
   function handleSubmit({ username, password }) {
     if (userDefault === username && passwordDefault === password) {
       setAcces(true);
@@ -26,7 +29,7 @@ function App() {
       alert("contraseña y clave incorrecta");
     }
   }
-
+ //funcion logOut para salir de la app y no poder entrar
   function logOut() {
     setAcces(false);
     navigate("/");

@@ -10,18 +10,17 @@
   padding-top: 2em;
   box-shadow: 1px -1px 20px 8px rgba(3, 3, 3, 0.3);
 }
-.warning {
+.defaultInp , .warning{
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1em;
+  border-radius: 5px;
+  padding: 7px;
+}
+.warning{
   transition: 0.3s;
   background-color: rgba(255, 0, 0, 0.137);
   border-color: red;
-}
-.defaultInp {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 0.3em;
-  margin-bottom: 2em;
-  border-radius: 5px;
-  padding: 7px;
 }
 .button {
   border: none;
@@ -36,6 +35,11 @@
   min-height: 30px;
   max-height: 50px;
 }
+.error_p{
+  font-style: italic;
+  color: rgba(255, 0, 0, 0.69);
+  margin-bottom: 2em;
+}
 @media (min-width: 800px) {
   .form {
     min-width: 500px;
@@ -49,7 +53,7 @@
     margin-top: 2em;
   }
   .defaultInp {
-    margin-bottom: 5em;
+    margin-bottom: 3em;
   }
   .content{
     display: grid;
